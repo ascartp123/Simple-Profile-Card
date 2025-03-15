@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background: #232323;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .profile {
+        width: 300px;
+        border-radius: 10px;
+        background: linear-gradient(to top, #bc0423dd, #e3eeff);
+        box-shadow: 1px 0 10px rgb(0, 0, 0);
+        text-align: center;
+        padding: 20px;
+      }
+      .profile img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .profile h2,
+      .profile h3 {
+        margin: 10px 0 5px;
+      }
+      .profile p {
+        font-size: 14px;
+        color: #333;
+      }
+      .icon {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-size: 24px;
+        margin: 10px 0;
+      }
+      .icon i {
+        cursor: pointer;
+        transition: transform 0.3s, color 0.3s;
+      }
+      .icon i:hover {
+        color: #0f8cb2;
+        transform: scale(1.2);
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #0f8cb2;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s, box-shadow 0.3s;
+      }
+      button:hover {
+        background-color: #e63710;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar.png"
+        alt="profile-image"
+      />
+      <h2>John Doe</h2>
+      <h3>Web Developer</h3>
+      <p>
+        Passionate web developer skilled in front-end and back-end technologies.
+        Creating responsive, user-friendly websites and applications.
+      </p>
+      <div class="icon">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-telegram"></i>
+      </div>
+      <button>Contact Me</button>
+    </div>
+  </body>
+</html>
